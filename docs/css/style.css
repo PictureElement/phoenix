@@ -14,10 +14,10 @@ img {
 }
 
 .banner-0 {
-  padding: 150px 0;
+  padding: 200px 0;
   background: url(../media/banner-0.jpg);
   background-size: cover;
-  background-position: 70%;
+  background-position: 70% 25%;
   color: #f1f1f1;
 }
 
@@ -26,6 +26,6 @@ img {
 }
 
 .banner-2 {
-  background: #f1f1f1;
   padding: 100px 0;
+  background-color: #f1f1f1;
 }
