@@ -1,0 +1,31 @@
+.navbar-brand {
+  font-size: 25px;
+  color: black !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.banner-0 {
+  padding: 150px 0;
+  background: url(../media/banner-0.jpg);
+  background-size: cover;
+  background-position: 70%;
+  color: #f1f1f1;
+}
+
+.banner-1 {
+  padding: 100px 0;
+}
+
+.banner-2 {
+  background: #f1f1f1;
+  padding: 100px 0;
+}
