@@ -4,6 +4,7 @@ body {
 }
 
 .navbar-brand {
+  font-family: 'Poiret One', cursive;
   font-size: 25px;
   color: black !important;
 }
