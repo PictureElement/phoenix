@@ -71,16 +71,6 @@ img {
   color: #f1f1f1;
 }
 
-.contact input, .contact textarea {
-  background: none !important;
-  border: 3px solid #f1f1f1 !important;
-  color: #f1f1f1;
-}
-
-.contact input:focus, .contact textarea:focus {
-  color: #f1f1f1;
-}
-
 .footer {
   padding: 50px 0;
 }

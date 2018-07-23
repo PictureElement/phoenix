@@ -32,6 +32,9 @@ img {
 
 .store-finder {
   padding: 100px 0;
+}
+
+.store-finder .container {
   max-width: 50em;
 }
 
@@ -65,16 +68,6 @@ img {
   background: url(../media/contact.jpg);
   background-size: cover;
   background-position: 50% 50%;
-  color: #f1f1f1;
-}
-
-.contact input, .contact textarea {
-  background: none !important;
-  border: 3px solid #f1f1f1 !important;
-  color: #f1f1f1;
-}
-
-.contact input:focus, .contact textarea:focus {
   color: #f1f1f1;
 }
 
