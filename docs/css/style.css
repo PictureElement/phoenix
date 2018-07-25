@@ -32,6 +32,7 @@ h1, h2 {
   background: url(../media/banner-0.jpg);
   background-size: cover;
   background-position: 70% 25%;
+  background-attachment: fixed;
   color: #f1f1f1;
 }
 
@@ -94,11 +95,13 @@ h1, h2 {
   background: url(../media/contact.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  background-attachment: fixed;
   color: #f1f1f1;
 }
 
 .footer {
   padding: 50px 0;
+  position: relative;
 }
 
 .footer p {
@@ -124,16 +127,16 @@ h1, h2 {
 }
 
 .back-to-top {
-  background: rgba(52, 58, 64, 0.5);
-  position: fixed;
-  bottom: 30px;
+  position: absolute;
+  bottom: 110px;
   right: 30px;
   width: 50px;
   height: 50px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .back-to-top:hover {
-  background: rgba(52, 58, 64, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .back-to-top i {
@@ -141,6 +144,4 @@ h1, h2 {
   left: 19px;
   top: 12px;
   font-size: 24px;
-  color: #fff;
-  transition: 200ms;
 }

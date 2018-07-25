@@ -42,13 +42,13 @@
 
   <section id="home" class="hero container">
     <div class="row align-items-center">
-      <div class="col-sm-6">
+      <div class="col-sm-6 hero-top">
         <img src="media/hero.png">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 hero-right">
         <h1>Pawnbroking Made Easy</h1>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut impedit error nisi, enim laudantium consequuntur, mollitia amet eligendi accusamus dolorem voluptate rerum animi libero nihil perspiciatis ipsam, similique debitis laboriosam.</p>
-        <button type="button" class="btn btn-outline-dark">About Us</button>
+        <button type="button" class="btn btn-outline-dark btn-bottom">About Us</button>
       </div>
     </div>
   </section>
@@ -56,10 +56,10 @@
   <section id="features" class="banner-0">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5 banner-0-left">
           <h2>The Trusted Way For Cash Today</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut ratione doloribus, voluptatum modi libero officia, quidem adipisci ab, quisquam tempore necessitatibus tenetur sapiente est! Rerum sint et suscipit iure.</p>
-          <button type="button" class="btn btn-outline-light">Learn More</button>
+          <button type="button" class="btn btn-outline-light btn-bottom">Learn More</button>
         </div>
         <div class="col-md-7"></div>
       </div>
@@ -69,12 +69,12 @@
   <section class="banner-1">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-sm-6 order-sm-2">
+        <div class="col-sm-6 order-sm-2 banner-1-right">
           <h2>We Buy Any Gold</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, reiciendis debitis. Aspernatur maxime optio est nemo numquam obcaecati fugit, recusandae id earum itaque, necessitatibus laboriosam. Laboriosam accusantium assumenda sint porro?</p>
-          <button type="button" class="btn btn-outline-dark">Learn More</button>
+          <button type="button" class="btn btn-outline-dark btn-bottom">Learn More</button>
         </div>
-        <div class="col-sm-6 order-sm-1">
+        <div class="col-sm-6 order-sm-1 mt-4 mt-sm-0 banner-1-left">
           <img src="media/banner-1.jpg">
         </div>
       </div>
@@ -84,12 +84,12 @@
   <section class="banner-2">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-sm-6">
+        <div class="col-sm-6 banner-2-left">
           <h2>Hassle-Free Cash</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quaerat quam adipisci error ducimus, natus saepe reprehenderit, assumenda id fugiat eligendi dolorem, commodi unde sunt vel veniam mollitia harum enim?</p>
-          <button type="button" class="btn btn-outline-dark">Learn More</button>
+          <button type="button" class="btn btn-outline-dark btn-bottom">Learn More</button>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-4 mt-sm-0 banner-2-right">
           <img src="media/banner-2.png">
         </div>
       </div>
@@ -481,14 +481,36 @@
         Designed &amp; Developed by <a href="https://pictureelement.github.io/portfolio-2/">PictureElement</a>
       </p>
     </div>
+    <a id="back-to-top" class="back-to-top" href="#navbar">
+      <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+    </a>
   </footer>
-
-  <a id="back-to-top" class="back-to-top" href="#navbar">
-    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-  </a>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.hero-top', { duration: 2000, origin: 'top', distance: '200px'});
+    sr.reveal('.hero-right', { duration: 2000, origin: 'right', distance: '200px'});
+    sr.reveal('.banner-0-left', { duration: 2000, origin: 'left', distance: '200px'});
+    sr.reveal('.banner-1-left', { duration: 2000, origin: 'left', distance: '200px'});
+    sr.reveal('.banner-1-right', { duration: 2000, origin: 'right', distance: '200px'});
+    sr.reveal('.banner-2-left', { duration: 2000, origin: 'left', distance: '200px'});
+    sr.reveal('.banner-2-right', { duration: 2000, origin: 'right', distance: '200px'});
+    sr.reveal('.btn-bottom', { duration: 2000, delay: 2000 });
+  </script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'start'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
