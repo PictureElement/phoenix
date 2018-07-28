@@ -136,8 +136,8 @@ img {
 
 .back-to-top {
   position: absolute;
-  bottom: 110px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   width: 50px;
   height: 50px;
   color: rgba(0, 0, 0, 0.7);

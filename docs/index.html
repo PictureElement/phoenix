@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Single Product Page</title>
+  <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white container">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-white container">
     <a class="navbar-brand" href="#">Phoenix</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -42,12 +42,12 @@
 
   <section id="home" class="hero container">
     <div class="row align-items-center">
-      <div class="col-md-6 hero-top">
+      <div class="col-lg-6 hero-left">
         <img src="media/hero@1x.jpg" srcset="media/hero@1x.jpg 1x, media/hero@2x.jpg 2x">
       </div>
-      <div class="col-md-6 hero-right">
+      <div class="col-lg-6 hero-right">
         <h1>Pawnbroking Made Easy</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut impedit error nisi, enim laudantium consequuntur, mollitia amet eligendi accusamus dolorem voluptate rerum animi libero nihil perspiciatis ipsam, similique debitis laboriosam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut impedit error nisi, enim laudantium consequuntur, mollitia amet eligendi accusamus dolorem voluptate rerum animi libero nihil perspiciatis ipsam, similique debitis laboriosam.</p>
         <button type="button" class="btn btn-outline-dark btn-bottom">About Us</button>
       </div>
     </div>
@@ -491,14 +491,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   <script>
     window.sr = ScrollReveal();
-    sr.reveal('.hero-top', { duration: 2000, origin: 'top', distance: '200px'});
-    sr.reveal('.hero-right', { duration: 2000, origin: 'right', distance: '200px'});
-    sr.reveal('.banner-0-left', { duration: 2000, origin: 'left', distance: '200px'});
-    sr.reveal('.banner-1-left', { duration: 2000, origin: 'left', distance: '200px'});
-    sr.reveal('.banner-1-right', { duration: 2000, origin: 'right', distance: '200px'});
-    sr.reveal('.banner-2-left', { duration: 2000, origin: 'left', distance: '200px'});
-    sr.reveal('.banner-2-right', { duration: 2000, origin: 'right', distance: '200px'});
-    sr.reveal('.btn-bottom', { duration: 2000, delay: 2000 });
+    sr.reveal('.hero-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.hero-right', { duration: 1000, origin: 'right', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.banner-0-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.banner-1-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.banner-1-right', { duration: 1000, origin: 'right', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.banner-2-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.banner-2-right', { duration: 1000, origin: 'right', distance: '50px', viewFactor: 0.1 });
   </script>
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
