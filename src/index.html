@@ -69,7 +69,7 @@
   <section class="banner-1">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 banner-1-left">
+        <div class="col-md-6">
           <img src="media/banner-1@1x.png" srcset="media/banner-1@1x.png 1x, media/banner-1@2x.png 2x">
         </div>
         <div class="col-md-6 banner-1-right">
@@ -89,7 +89,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quaerat quam adipisci error ducimus, natus saepe reprehenderit, assumenda id fugiat eligendi dolorem, commodi unde sunt vel veniam mollitia harum enim?</p>
           <button type="button" class="btn btn-outline-dark btn-bottom">Learn More</button>
         </div>
-        <div class="col-md-6 banner-2-right order-1 order-md-2">
+        <div class="col-md-6 order-1 order-md-2">
           <img src="media/banner-2@1x.png" srcset="media/banner-2@1x.png 1x, media/banner-2@2x.png 2x">
         </div>
       </div>
@@ -491,13 +491,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   <script>
     window.sr = ScrollReveal();
-    sr.reveal('.hero-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
-    sr.reveal('.hero-right', { duration: 1000, origin: 'right', distance: '50px', viewFactor: 0.1 });
-    sr.reveal('.banner-0-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
-    sr.reveal('.banner-1-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
-    sr.reveal('.banner-1-right', { duration: 1000, origin: 'right', distance: '50px', viewFactor: 0.1 });
-    sr.reveal('.banner-2-left', { duration: 1000, origin: 'left', distance: '50px', viewFactor: 0.1 });
-    sr.reveal('.banner-2-right', { duration: 1000, origin: 'right', distance: '50px', viewFactor: 0.1 });
+    sr.reveal('.hero-left', { duration: 1000, origin: 'bottom', distance: '100px', viewFactor: 0.1 });
+    sr.reveal('.hero-right', { duration: 1000, origin: 'bottom', distance: '100px', viewFactor: 0.1 });
+    sr.reveal('.banner-0-left', { duration: 1000, origin: 'bottom', distance: '100px', viewFactor: 0.1 });
+    sr.reveal('.banner-1-right', { duration: 1000, origin: 'bottom', distance: '100px', viewFactor: 0.1 });
+    sr.reveal('.banner-2-left', { duration: 1000, origin: 'bottom', distance: '100px', viewFactor: 0.1 });
   </script>
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
