@@ -29,11 +29,13 @@ img {
 
 .banner-0 {
   padding: 100px 0;
-  background: url(../media/banner-0.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../media/banner-0.jpg);
   background-size: cover;
   background-position: 70% 25%;
   background-attachment: fixed;
   color: #f1f1f1;
+  backdrop-filter: sepia(90%);
+  -webkit-backdrop-filter: sepia(90%);
 }
 
 .banner-1 {
@@ -135,9 +137,11 @@ img {
 }
 
 .back-to-top {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  /*position: absolute;
+  bottom: 115px;
+  right: 0;*/
+  display: block;
+  margin: 0 auto;
   width: 50px;
   height: 50px;
   color: rgba(0, 0, 0, 0.7);
